@@ -1,11 +1,9 @@
 package com.example.x.uts290917;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class profile extends AppCompatActivity {
@@ -15,23 +13,24 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        popup();
+        getSupportActionBar().setTitle("About Developer");
+        getSupportActionBar().setSubtitle("Abiyyu Daffa\' Alam");
 
     }
 
-    public void popup(){
-        AlertDialog.Builder alrtbuild = new AlertDialog.Builder(profile.this);
-        alrtbuild
-                .setMessage("Klik data untuk mengetahui lebih lanjut.")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
-        AlertDialog alrt = alrtbuild.create();
-        alrt.show();
-    }
+//    public void popup(){
+//        AlertDialog.Builder alrtbuild = new AlertDialog.Builder(profile.this);
+//        alrtbuild
+//                .setMessage("Klik data untuk mengetahui lebih lanjut.")
+//                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//
+//            }
+//        });
+//        AlertDialog alrt = alrtbuild.create();
+//        alrt.show();
+//    }
 
     public void send_mail(View view) {
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "smk_daffa@rbs.sch.id", null));

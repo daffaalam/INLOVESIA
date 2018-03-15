@@ -2,9 +2,9 @@ package com.example.x.uts290917;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -61,6 +61,7 @@ public class kota extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kota);
+        setTitle("List Kota Di Indonesia");
 
         adapter_listview adp = new adapter_listview(this, list_kota, img_kota);
         ListView list_view = (ListView) findViewById(R.id.list_kota_xml);

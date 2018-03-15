@@ -15,7 +15,8 @@
             android:alpha="0.7"
             android:background="@color/colorPrimary"
             android:scaleType="centerCrop"
-            android:src="@drawable/background1" />
+            android:src="@drawable/background1"
+            tools:ignore="ContentDescription" />
 
     </FrameLayout>
 
@@ -29,17 +30,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="List Provinsi di Indonesia"
             android:textAllCaps="true"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <ListView
             android:id="@+id/list_provinsi_xml"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </ListView>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

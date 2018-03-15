@@ -3,7 +3,7 @@
     package="com.example.x.uts290917">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,31 +12,46 @@
         android:roundIcon="@drawable/wondelful_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main">
+        <activity
+            android:name=".main"
+            android:theme="@style/AppThemeNoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".home" />
-        <activity android:name=".provinsi" />
-        <activity android:name=".details" />
-        <activity android:name=".kota" />
-        <activity android:name=".kuliner" />
-        <activity android:name=".wisata" />
-        <activity android:name=".profile">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.SEND" />-->
-                <!--<data android:mimeType="*/*" />-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.SENDTO" />-->
-                <!--<data android:scheme="mailto" />-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
+        <activity android:name=".provinsi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
         </activity>
-        <activity android:name=".about" />
+        <activity android:name=".details" />
+        <activity android:name=".kota">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
+        </activity>
+        <activity android:name=".kuliner">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
+        </activity>
+        <activity android:name=".wisata">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
+        </activity>
+        <activity android:name=".profile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
+        </activity>
+        <activity android:name=".about">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".home" />
+        </activity>
     </application>
 
 </manifest>

@@ -20,7 +20,8 @@
             android:layout_gravity="center"
             android:layout_marginEnd="10dp"
             android:padding="5dp"
-            android:src="@drawable/wondelful_logo" />
+            android:src="@drawable/wondelful_logo"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                     android:text="IN"
                     android:textColor="#ffffff"
                     android:textSize="38sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tx_love"
@@ -50,7 +52,8 @@
                     android:text="LOVE"
                     android:textColor="#ff0004"
                     android:textSize="38sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/tx_sia"
@@ -59,7 +62,8 @@
                     android:text="SIA"
                     android:textColor="#ffffff"
                     android:textSize="38sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -67,7 +71,6 @@
                 android:id="@+id/versi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Version : x"
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 android:textStyle="italic"
@@ -77,20 +80,13 @@
 
     </LinearLayout>
 
-    <!--<WebView-->
-    <!--android:id="@+id/txt_about"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_marginBottom="20dp">-->
-    <!--</WebView>-->
-
-    <TextView
+    <WebView
+        android:id="@+id/txt_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="@string/about_app"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:layout_marginBottom="20dp">
+
+    </WebView>
 
     <TextView
         android:layout_width="match_parent"
@@ -99,7 +95,8 @@
         android:text="Developers"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="match_parent"
@@ -107,7 +104,8 @@
         android:layout_marginBottom="20dp"
         android:text="- Abiyyu Daffa' Alam"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="match_parent"
@@ -116,7 +114,8 @@
         android:text="Thanks To"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="match_parent"

@@ -29,17 +29,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
             android:gravity="center"
             android:text="List Wisata di Indonesia"
             android:textAllCaps="true"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <ListView
             android:id="@+id/list_wisata_xml"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </ListView>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

@@ -2,8 +2,8 @@ package com.example.x.uts290917;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -14,11 +14,14 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        getSupportActionBar().setTitle(R.string.app_name + " versi" + BuildConfig.VERSION_NAME);
+        getSupportActionBar().setSubtitle("give your love to Indonesia counrty");
+
         font();
 
     }
 
-    public void font(){
+    public void font() {
 
         TextView txt_in = (TextView) findViewById(R.id.tx_in);
         TextView txt_love = (TextView) findViewById(R.id.tx_love);

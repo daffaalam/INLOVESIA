@@ -15,15 +15,16 @@
             android:alpha="0.7"
             android:background="@color/colorPrimary"
             android:scaleType="centerCrop"
-            android:src="@drawable/background1" />
+            android:src="@drawable/background1"
+            tools:ignore="ContentDescription" />
 
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/judul_detail"
@@ -40,7 +41,8 @@
             android:id="@+id/img_detail"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            tools:ignore="ContentDescription" />
 
         <WebView
             android:id="@+id/web_text"

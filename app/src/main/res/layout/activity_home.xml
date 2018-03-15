@@ -15,268 +15,297 @@
             android:alpha="0.7"
             android:background="@color/colorPrimary"
             android:scaleType="centerCrop"
-            android:src="@drawable/background1" />
+            android:src="@drawable/background1"
+            tools:ignore="ContentDescription" />
 
     </FrameLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tx_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN"
+                android:textColor="#ffffff"
+                android:textSize="45sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tx_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOVE"
+                android:textColor="#ff0004"
+                android:textSize="45sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tx_sia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIA"
+                android:textColor="#ffffff"
+                android:textSize="45sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="serif"
+            android:text="give your love to Indonesia counrty"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tx_in"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="IN"
-                    android:textColor="#ffffff"
-                    android:textSize="40sp" />
-
-                <TextView
-                    android:id="@+id/tx_love"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LOVE"
-                    android:textColor="#ff0004"
-                    android:textSize="40sp" />
-
-                <TextView
-                    android:id="@+id/tx_sia"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SIA"
-                    android:textColor="#ffffff"
-                    android:textSize="40sp" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
-                android:fontFamily="serif"
-                android:text="give your love to Indonesia counrty"
-                android:textColor="#000000"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:baselineAligned="false"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:baselineAligned="false"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:orientation="horizontal">
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="provinsi"
+                            android:src="@drawable/batik_icn"
+                            tools:ignore="ContentDescription" />
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="provinsi"
-                                android:padding="10dp"
-                                android:src="@drawable/batik_icn" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Provinsi\nIndonesia"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="kota"
-                                android:padding="10dp"
-                                android:src="@drawable/maps" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Kota\nIndonesia"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="Provinsi\nIndonesia"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
                     <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:orientation="horizontal">
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="kota"
+                            android:src="@drawable/maps"
+                            tools:ignore="ContentDescription" />
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="kuliner"
-                                android:padding="10dp"
-                                android:src="@drawable/rendang" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Kuliner\nIndonesia"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="wisata"
-                                android:padding="10dp"
-                                android:src="@drawable/wayang" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Wisata\nIndonesia"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="profile"
-                                android:padding="10dp"
-                                android:src="@drawable/people" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="MyProfile"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="170dp"
-                                android:layout_gravity="center"
-                                android:onClick="about"
-                                android:padding="10dp"
-                                android:src="@drawable/wondelful_logo" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="About\nThis App"
-                                android:textColor="#000000"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="Kota\nIndonesia"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
                 </LinearLayout>
 
-            </ScrollView>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="kuliner"
+                            android:src="@drawable/rendang"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="Kuliner\nIndonesia"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="wisata"
+                            android:src="@drawable/wayang"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="Wisata\nIndonesia"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="profile"
+                            android:src="@drawable/people"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="MyProfile"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:layout_gravity="center"
+                            android:onClick="about"
+                            android:src="@drawable/wondelful_logo"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:text="About\nThis App"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </RelativeLayout>
